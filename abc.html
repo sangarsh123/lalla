@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matrimony</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/custom3.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<script type="text/javascript">
+		$('.carousel').carousel({
+		interval: 100
+	})
+
+	</script>
+   <style type="text/css">
+      body{
+   font-family: 'Open Sans Condensed', sans-serif;
+}
+.banner-cen {
+    width: 100%;
+    margin: 0px -50% 0px 0px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+}
+
+/*------------------------------header----------------------*/
+.header{
+   background-color: rgba(195, 33, 33, 0.92);
+    border-bottom: 4px solid #FFC107;
+    position: fixed;
+    z-index: 999999999999999999999999;
+    margin:0 auto;
+    width: 100%;
+    display: block;
+}
+.local-header{
+   background-color: transparent !important;
+   border-color: transparent !important;
+   margin-bottom: 0px !important;
+}
+.logo{
+   color: white !important;
+   font-size: 30px;
+   margin-top: 13px;
+   
+}
+.header-menu{
+   float: right;
+}
+.header-menu a{
+   color: white !important;
+   padding-top: 30px !important;
+   padding-bottom: 30px !important;
+   font-size: 16px;
+
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: #FFC107;
+}
+.header-menu li:hover{
+   color: white !important;
+    background-color: #FFC107;
+}
+
+/*--------------------banner-section-------------*/
+.banner-section{
+   position: relative;
+}
+.banner-img img{
+   height: 665px !important;
+   width: 100%;
+
+}
+.banner-controls{
+   background-color:transparent !important;
+   background-image: none !important;
+   width: 10%;
+}
+.banner-form-div{
+  position: absolute;
+  z-index: 99;
+  background-color: white;
+  box-shadow: 0 10px 10px 5px rgba(0,0,0,0.2);
+      border-radius: 3px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      position: absolute;
+      clear: both;
+      margin-top: 13%;
+      margin-left: 60%;
+}
+.carousel-images{
+  position: relative;
+}
+.form-head{
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.submit-btn{
+  width: 50%;
+  margin: 20px auto 0px auto;
+  background-color: #FFC107;
+  color: white;
+  border-color: #FFC107; 
+}
+.register{
+  border-radius: 0px  !important;
+  color: black;
+  font-size: 17px;
+}
+.register.active{
+  color: white;
+}
+.register:hover{
+  color: white;
+  background-color: #FFC107 !important;
+}
+.login{
+  border-radius: 0px  !important;
+}
+.register-input{
+  border-radius: 0px;
+  margin: 20px 0px;
+}
+.button-ri{
+  width: 34%;
+  font-size: 14px;
+  float: right;
+  border-radius: 0px;
+  background-color: rgba(195, 33, 33, 0.92) !important;
+  border-color: rgba(195, 33, 33, 0.92) !important;
+  color: white;
+}
+.floatr{
+  margin-left: 244px !important;
+}
+.btn-bg{
+  background-color: rgba(195, 33, 33, 0.92) !important;
+}
+.partner{
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+}
+.perfect{
+  color: black;
+  padding:0px 20px;
+}
+.free{
+  text-align: center;
+  font-size: 23px;
+  margin-top: 0px;
+  color: #ea1b26;
+}
+.perfect{
+  line-height: 28px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: rgba(195, 33, 33, 0.92) !important;
+}
+.banner-form h3{
+  color: white;
+  font-size: 18px;
+  margin-top: 0px;
+}
+.begin-btn{
+  width: 50%;
+  margin:15px auto 0px !important;
+  background: #FFC107;
+  border: #FFC107;
+  color: white;
+
+}
+
+
+/*-------------------register-section--------*/
+.register-section{
+ background: rgba(0, 0, 0, 0.32);
+ position: absolute;
+ margin-top: -74px;
+ display: block;
+ width: 100%;
+ border-radius: 3px;
+}
+.register-div h2{
+   font-family: 'Lobster', cursive;
+   color: white;
+   margin: 20px 0px;
+}
+.register-btn button{
+background: #FFC107;
+border-color: #FFC107;
+color: white;
+width: 71%;
+margin-top: 0px;
+font-size: 15px;
+height: 35px;
+padding-right: 10px;
+margin-top: 19px;
+border-radius: 30px;
+}
+.register-btn button:hover{
+   color: white;
+}
+/*---------------------------why-matrimony-section--------*/
+.why-matrimony-section{
+   padding:40px 0px ;
+}
+.why-matrimony-div h2{
+   font-weight: 600;
+     font-size: 22PX;
+
+}
+.why-div p{
+   line-height: 32px;
+    font-size: 18px;
+}
+
+/*----------------------------join-section-----------------*/
+.joined-section{
+   padding: 40px 0px 40px 0px;
+   text-align: center;
+   background-color: #f5f5f5;
+}
+.joined-div h2{
+font-weight: 600;
+margin-bottom: 40px;
+font-size: 34PX;
+margin-top: 0px;
+}
+.joined img{
+border-radius: 100%;
+border:3px solid #FFC107;
+}
+.join-left{
+   background-color: transparent !important;
+   background-image: none !important;
+   width: 10px;
+   margin-top: 6%;
+
+}
+.join-left i{
+   color: #FFC107;
+}
+.joined h3{
+   font-size: 18PX;
+   font-weight: 600;
+}
+
+/*----------------privacy-section-------------*/
+.privacy-feautures-section{
+   padding: 40px 0px 40px 0px;
+}
+.privacy-feautures-div h2{
+   font-weight: 600;
+margin-bottom: 40px;
+font-size: 34PX;
+text-align: center;
+margin-top: 0px;
+}
+.privacy-div li{
+   line-height: 30px;
+   font-size: 16px;
+}
+
+/*-----------------bride-groom-----------*/
+.bride-groom-section{
+   padding: 40px 0px 40px 0px;
+   background-color: #f5f5f5;
+}
+.bride-groom-div h2{
+   font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 34PX;
+   text-align: center;
+   margin-top: 0px;
+}
+.bride-div{
+   background-color: white;
+       box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+       padding:0px 0px;
+       border-radius: 3px;
+       height:510px;
+       
+}
+.bride-div img{
+   width: 100%;
+   border-radius: 3px;
+}
+.img{
+   position: relative;
+}
+.bride-div h3{
+   padding-left: 20px;
+   font-weight: 600;
+}
+
+.bride-div p{   
+  text-align: justify;     
+  padding: 0px 20px 10px 20px;
+font-size: 17px; 
+    line-height: 30px;
+
+}
+.bride-overlay{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   bottom: 0px;
+   right: 0px;
+   background-color: rgba(0, 0, 0, 0.51);
+   display: none;
+   
+}
+.img:hover .bride-overlay{
+   display: block;
+}
+.about{
+   width: 20%;
+   margin: 0 auto;
+   color: black;
+   font-size: 16px;
+   background-color: rgba(195, 33, 33, 0.92);
+   border-color: #FFC107;
+   color: white;
+}
+.about:hover{
+   background-color: #FFC107;
+   color: white;
+   border-color: #FFC107;
+}
+
+/*-----------------choose-us-section--------------*/
+.choose-us-section{
+   padding: 40px 0px 20px 0px;
+   text-align: center;
+}
+.choose-us-div h2{
+   font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 34PX;
+   text-align: center;
+   margin-top: 0px;
+}
+.choose-div{
+   background-color: #f5f5f5;
+   padding: 28px;
+}
+
+.choose-div p{
+   line-height: 28px;
+   font-size: 18px;
+}
+.choose-div img{
+   height: 70px;
+}
+.choose-div h3{
+   font-size: 22px;
+   font-weight: 600;
+}
+/*------------------------quotation-section--------*/
+.quotation-section{
+   background-image: url(images/quote-banner.jpg);
+   height: 400px;
+   background-size: cover;
+   text-align: center;
+   position: relative;
+   background-attachment: fixed;
+}
+.quote{
+   margin: 0 auto;
+   width: 100%;
+   display: block;
+}
+.quote p{
+   font-size: 32px;
+   color: white;
+   margin-top: 12% !important;
+   z-index: 9999999;
+   position: absolute;
+   width: 84%;
+   margin: 0 auto;
+   display: block;
+}
+.quote-overlay{
+   position: absolute;
+   top: 0px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   background-color: rgba(0, 0, 0, 0.50);
+}
+
+/*--------------------------footer------------------*/
+.footer{
+   background: rgba(0, 0, 0, 0.78);
+   padding: 20px 0px;
+}
+.footer-div h2{
+   font-size: 25px;
+}
+.footer-div h2{
+   color: #ccc;
+   text-align: justify;
+}
+.footer-div p{
+   color: #ccc;
+   text-align: justify;
+}
+.footer-div p{
+   font-size: 13px;
+   line-height: 22px;
+}
+.footer-div a{
+   color: #ccc;
+   line-height: 22px;
+}
+.footer-div ul{
+   line-height: 28px;
+}
+.footer-icons{
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   line-height: 30px !important;
+   margin: 20px 5px 30px 5px;
+
+}
+.fb{
+   background-color: #3E5B99;
+}
+.twitter{
+   background-color: #1DA1F2;
+}
+.instagram{
+   background-color: #333333;
+}
+.google{
+   background: #DD4F43;
+}
+
+
+
+   </style>
+</head>
+<body>
+<section class="header-section">
+<div class="header-div header">
+	<div class="container">
+		<nav class = "navbar navbar-default local-header" role = "navigation">
+   
+   <div class = "navbar-header ">
+      <button type = "button" class = "navbar-toggle" 
+         data-toggle = "collapse" data-target = "#example-navbar-collapse">
+         <span class = "sr-only">Toggle navigation</span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+         <span class = "icon-bar"></span>
+      </button>
+		
+      <a class = "navbar-brand logo" href = "#">Matrimoni</a>
+   </div>
+   
+   <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+	
+      <ul class = "nav navbar-nav header-menu">
+      <li class = "active"><a href = "#">HOME</a></li>
+         <li class = ""><a href = "#">SEARCH</a></li>
+         <li class = ""><a href = "#">FREE REGISTER</a></li>
+         <li class = ""><a href = "#">MEMBERSHIP</a></li>
+         <li class = ""><a href = "#">FREE HOROSCOPE</a></li>
+         <li class = ""><a href = "#">HELP</a></li>
+         <li class = ""><a href = "#">LOGIN</a></li>
+
+      </ul>
+   </div>
+   
+</nav>
+	</div>
+</div>	
+</section>
+<!--banner-section-->
+<section class="banner-section">
+	<div class="banner-div">
+		<div id = "myCarousel" class = "carousel slide">
+    <div class="banner-form-div col-md-4">
+        <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#register" class="register">Register Here</a></li>
+    <li class="floatr"><a data-toggle="tab" href="#login" class="login register">Login</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="register" class="tab-pane fade in active">
+      <form class="register-form">
+      <h1 class="partner">Find your Life Partner Here. </h1>
+      <h2 class="free"><b>Register FREE!</b></h2>
+        <input type="text" name="" class="form-control register-input" placeholder="Name">
+        <input type="Email" name="" class="form-control register-input" placeholder="E-mail">
+        <input type="password" name="" class="form-control register-input" placeholder="Password">
+        <a href="#">Forgot Password</a>
+        <button class="form-control button-ri">Register Now</button>
+      </form>
+    </div>
+    <div id="login" class="tab-pane fade">
+      <form class="register-form">
+      <h1 class="partner perfect"><span class="free"><b>Login </b></span> And Find Your Perfect Partner Today! </h1>
+      
+        <input type="Email" name="" class="form-control register-input" placeholder="E-mail">
+        <input type="password" name="" class="form-control register-input " placeholder="Password">
+        <a href="#">Forgot Password</a>
+        <button class="form-control button-ri">Login</button>
+      </form>
+    </div>
+  </div>
+      </div>
+    
+   <!-- Carousel items -->
+   <div class = "carousel-inner carousel-images">
+      <div class = "item active banner-img">
+         <img src = "images/home4-carousel.jpg" alt = "First slide">
+      </div>
+      
+      <div class = "item banner-img" >
+         <img src = "images/home4-carousel1.jpg" alt = "Second slide">
+      </div>
+      
+      <div class = "item banner-img">
+         <img src = "images/home4-carousel2.jpg" alt = "Third slide">
+      </div>
+   </div>
+   <!-- Carousel nav -->
+   <a class = "carousel-control left banner-controls" href = "#myCarousel" data-slide = "prev">&lsaquo;</a>
+   <a class = "carousel-control right banner-controls" href = "#myCarousel" data-slide = "next">&rsaquo;</a>
+</div> 
+	</div>
+</section>
+
+<!--register-section-->
+<section class="register-section">
+	<div class="container">
+		<div class="col-md-8 col-md-offset-2">
+		<div class="register-div col-md-8">
+			<h2><i>Dream it.Believe it.Make it happen!</i></h2>
+		</div>
+		<div class="register-btn col-md-4">
+			<button class="btn form-control">Register Now</button>
+		</div>
+	</div>
+	</div>
+</section>
+<!--WHY-MATRIMONY-->
+<section class="why-matrimony-section">
+   <div class="why-matrimony-div">
+   
+      <div class="container">
+         <div class="why-div col-md-5">
+            <img src="images/why-logo.png">
+         </div>
+         <div class="why-div col-md-7">
+         <h2>Why Matrimoni</h2>
+          <p>We understand that searching for the life partner is one of the most important and tasks of one's life. Our aim is to assist you in the process of finding your life partner by providing 100% FREE Matrimonial Service. You Don't need to Pay anything to use all the facilities of this website.</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!--unlimited-->
+
+
+<!--just-joined-->
+<section class="joined-section">
+	<div class="joined-div">
+	<h2>Just Joined</h2>
+		<div class="container">
+			<div id = "joinCarousel" class = "carousel slide">
+     <!-- Carousel items -->
+   <div class = "carousel-inner">
+      <div class = "item active joined">
+      <div class="col-md-4">
+         <img src = "images/join1.jpeg" >
+         <h3>Mayank Gupta</h3>
+         </div>
+         <div class="col-md-4">
+         <img src = "images/join2.jpeg" >
+         <h3>PREM PANDEY</h3>
+         </div>
+         <div class="col-md-4">
+         <img src = "images/join3.jpeg" >
+         <h3>Rekha BIRADAR</h3>
+         </div>
+         
+      </div>
+      <div class = "item joined">
+      <div class="col-md-4 joined-info">
+         <img src = "images/join1.jpeg" >
+         <h3>Mayank Gupta</h3>
+         </div>
+         <div class="col-md-4 joined-info">
+         <img src = "images/join2.jpeg" >
+         <h3>PREM PANDEY</h3>
+         </div>
+         <div class="col-md-4 joined-info">
+         <img src = "images/join3.jpeg" >
+         <h3>Rekha BIRADAR</h3>
+         </div>
+         
+      </div>
+   </div>
+   
+   <!-- Carousel nav -->
+   <a class = "carousel-control left join-left" href = "#joinCarousel" data-slide = "prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+   <a class = "carousel-control right join-left" href = "#joinCarousel" data-slide = "next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+</div> 	
+		</div>
+	</div>
+</section>
+
+<!--privacy-feautures-->
+<section class="privacy-feautures-section">
+<div class="privacy-feautures-div">
+<h2>Privacy & Features</h2>
+   <div class="container">
+      <div class="privacy-div">
+         <ul>
+            <li>Ability to hide your Real Name</li>
+            <li>Hide your Date of Birth from Non-registered users</li>
+            <li>Accept and Decline Profiles Mechanism</li>
+            <li>Your contact details are shown only to "accepted Members" and if you choose you can hide them from all.</li>
+            <li>Watermarked Images to prevent misuse</li>
+         </ul>
+      </div>
+   </div>
+</div> 
+</section>
+
+<!--bride-groom-->
+<section class="bride-groom-section">
+   <div class="bride-groom-div">
+   <h2>Bride & Groom Profiles</h2>
+      <div class="container">
+
+         <div class=" col-md-6">
+         <div class="bride-div">
+         
+         <div class="img">
+         <div class="bride-overlay">
+            <button class="form-control about banner-cen">About Bride</button>
+         </div>
+         <img src="images/groom.jpg">
+         </div>
+         <h3>GERRARD</h3>
+         <p>The minute I heard my first love story. I started looking for you, not knowin how blind that was. Lovers don't finally meet somewhere. They're in each other all along. I love you, not only for what you are, but for what I am when I am with you. I love you, not only for what you have made of yourself but for what you are making of me. .....</p>
+         </div>
+         </div> 
+         
+         <div class="col-md-6">
+         <div class="bride-div">
+         
+         <div class="img">
+         <div class="bride-overlay">
+            <button class="form-control about banner-cen">About Groom</button>
+         </div>
+         <img src="images/bride.jpg">
+         </div>
+         <h3>DIANNE</h3>
+         <p>When you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible. I would rather share one lifetime with you than face all the ages of this world alone. You have made a place in my heart where I thought there was no room for anything else. .....</p>
+         </div> 
+         </div>
+      </div>
+   </div>
+</section>
+
+<!--most-reasons-->
+<section class="choose-us-section">
+   <div class="choose-us-div">
+   <h2>Most Reason to Why Choose us</h2>
+      <div class="container">
+      <div class="col-md-4">
+         <div class="choose-div" >
+            <img src="images/icons/love.png">
+            <h3>20 Years Experience</h3>
+            <p>We are never short of suggestions or inspiring ideas.We will support you and advise you.</p>
+         </div>
+         </div>
+         <div class=" col-md-4">
+         <div class="choose-div">
+            <img src="images/icons/parents.png">
+            <h3>100% Real Weddings</h3>
+            <p>Every wedding is unique and has a special story. Share all the details of your special moments.</p>
+         </div>
+         </div>
+         <div class="col-md-4">
+         <div class="choose-div">
+            <img src="images/icons/multiple.png">
+            <h3>Multiple Partner Search</h3>
+            <p>We offer over a variety of search options to suit your every need. </p>
+         </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+<!--quote-section-->
+<section class="quotation-section">
+<div class="quote-overlay"></div>
+  <div class="quote-div">
+     <div class="container">
+        <div class="quote">
+           <p class="">Matches are made in heaven. Why pay for it on earth!! - Please support our effort by joining and spreading the word about us among your friends and relatives.</p>
+        </div>
+     </div>
+  </div>
+</section>
+<!--footer-->
+<section class="footer">
+   <div class="footer-main-div">
+      <div class="container">
+      <div class="footer-div col-md-4">
+         <h2>About Us</h2>
+         <p>Matrimony.com is one of the pioneers of online matrimony service. It is regarded as the most trusted matrimony website by Brand Trust Report. We have also been featured in Limca Book of records for having Record number of documented marriages online. Our purpose is to build a better Bharat through happy marriages.</p>
+      </div>   
+      <div class="footer-div col-md-4">
+         <h2>Help & Support</h2>
+         <ul >
+            <li><a href="">24x7 Live help</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Safety Tips</a></li>
+         </ul>
+
+      </div>   
+      <div class="footer-div col-md-4">
+         <h2>Follow Us</h2>
+         <a href=""><i class="fa fa-facebook footer-icons fb" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-twitter footer-icons twitter" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-instagram footer-icons instagram" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-google-plus footer-icons google" aria-hidden="true"></i></a>
+
+      </div>   
+      </div>
+   </div>
+</section>
+</body>
+</html>
